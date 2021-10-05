@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./static/CSS/main.css" />
+    <title>Furniture App</title>
+  </head>
+  <body>
+    <!-- NAVBAR SECTION STARTS -->
+
+    <section class="navbar-container">
+      <div class="navbar-left">
+        <div class="sidebar-icon-container">
+          <button class="sidebar-button" onclick="toggleSidebar(event)">
+            <i class="material-icons sidebar-icon">subject</i>
+          </button>
+        </div>
+        <div class="navbar-link-div">
+          <a href="/" class="navbar-link" data-link>HOME</a>
+        </div>
+        <div class="navbar-link-div">
+          <a href="/product" class="navbar-link" data-link>SHOP</a>
+        </div>
+        <div class="navbar-link-div">
+          <a href="" class="navbar-link">MAGAZINE</a>
+        </div>
+      </div>
+      <div class="navbar-right">
+        <div class="search-icon-div">
+          <a href="" class="icon-link">
+            <i class="material-icons search-icon">search</i>
+          </a>
+        </div>
+        <div class="navbar-input-div">
+          <input type="text" name="" id="" class="navbar-input" />
+        </div>
+        <div class="nav-shop-icon-div">
+          <a href="" class="icon-link">
+            <i class="material-icons-outlined search-icon">shopping_cart</i>
+          </a>
+        </div>
+        <div class="navbar-link-div">
+          <a href="" class="navbar-link">LOGIN</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- NAVBAR SECTION ENDS -->
+
+    <!-- MAIN BODY STARTS -->
+
+    <section class="main-content-container">
+      <div class="sidebar-container">
+        <div class="filter-text">
+          <h4>FILTER BY</h4>
+        </div>
+        <div class="accordian-container">
+          <div class="accordian-content">
+            <div class="collection-container accordian">
+              <h1 class="accordian-text">Collection</h1>
+              <button
+                href=""
+                class="accordian-button"
+                onclick="openAccordian(event,'collection-accordian')"
+              >
+                <i class="material-icons">expand_more</i>
+              </button>
+            </div>
+            <div class="collection-accordian">
+              <ul class="collection-list">
+                <li class="accordian-item">
+                  <a href="" class="accordian-item-link">Item</a>
+                </li>
+                <li class="accordian-item">
+                  <a href="" class="accordian-item-link">Item</a>
+                </li>
+                <li class="accordian-item">
+                  <a href="" class="accordian-item-link">Item</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="accordian-content">
+            <div class="color-container accordian">
+              <h1 class="accordian-text">Color</h1>
+              <button
+                href=""
+                class="accordian-button"
+                onclick="openAccordian(event,'color-accordian')"
+              >
+                <i class="material-icons">expand_more</i>
+              </button>
+            </div>
+            <div class="color-accordian">
+              <ul class="color-list">
+                <li class="accordian-item">
+                  <a href="" class="accordian-item-link">Item</a>
+                </li>
+                <li class="accordian-item">
+                  <a href="" class="accordian-item-link">Item</a>
+                </li>
+                <li class="accordian-item">
+                  <a href="" class="accordian-item-link">Item</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="accordian-content">
+            <div class="category-container accordian">
+              <h1 class="accordian-text">Category</h1>
+              <button
+                href=""
+                class="accordian-button"
+                onclick="openAccordian(event,'category-accordian')"
+              >
+                <i class="material-icons">expand_more</i>
+              </button>
+            </div>
+            <div class="category-accordian">
+              <ul class="category-list">
+                <li class="accordian-item">
+                  <a href="" class="accordian-item-link">Item</a>
+                </li>
+                <li class="accordian-item">
+                  <a href="" class="accordian-item-link">Item</a>
+                </li>
+                <li class="accordian-item">
+                  <a href="" class="accordian-item-link">Item</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-container"></div>
+      <div class="product-container">
+        <div class="product-img-container">
+          <div class="product-img-container-top">
+            <div class="product-img-div"></div>
+            <div class="next-img-btn-div">
+              <button class="next-img-btn">
+                <i class="material-icons">arrow_forward</i>
+              </button>
+            </div>
+          </div>
+          <div class="product-img-container-bottom"></div>
+        </div>
+        <div class="product-desc-container">
+          <div class="desc-text-grey">Kappu Regular Chair</div>
+          <div class="desc-text-primary">Scandanavian Collection</div>
+          <div class="desc-text-black">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa magnam
+            officiis quisquam, iure suscipit tenetur quaerat commodi fuga.
+            Cumque, cum?Lorem ipsum dolor sit, amet consectetur adipisicing
+            elit. Est, magnam?
+          </div>
+          <div class="desc-text-grey">Color</div>
+          <div class="color-pallette">
+            <i class="material-icons pallette-grey">fiber_manual_record</i>
+            <i class="material-icons pallette-black">fiber_manual_record</i>
+          </div>
+          <div class="desc-text-bottom">
+            <div class="desc-price desc-text-primary desc-text-bottom-item">
+              $2900
+            </div>
+            <div class="desc-btn-div desc-text-bottom-item">
+              <button class="desc-btn">Buy Now</button>
+            </div>
+            <div class="desc-shop-icon-div desc-text-bottom-item">
+              <button class="desc-shop-icon">
+                <i class="material-icons-outlined">add_shopping_cart</i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAIN BODY ENDS -->
+
+    <!-- FOOTER SECTION STARTS -->
+
+    <section class="footer-container">
+      <div class="footer-link-div"></div>
+      <div class="footer-icon-div">
+        <a href="" class="icon-link">
+          <i class="material-icons search-icon">chevron_right</i>
+        </a>
+      </div>
+    </section>
+
+    <!-- FOOTER SECTION ENDS -->
+    <script src="./static/JavaScript/script.js"></script>
+    <script type="module" src="./static/js/index.js"></script>
+  </body>
+</html>
