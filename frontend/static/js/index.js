@@ -35,7 +35,10 @@ const router = async () => {
 };
 window.addEventListener("popstate", router); //FOR NVIGATING BACKWARDS IN THE HISTORY STATE
 document.addEventListener("DOMContentLoaded", () => {
+  console.log("INSIDE DOM CONTENT LOADED");
   document.body.addEventListener("click", (e) => {
+    console.log("INSIDE CLICK LISTENER", e.target);
+
     if (e.target.matches("[data-link]")) {
       e.preventDefault();
       console.log("PRevent");

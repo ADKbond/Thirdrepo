@@ -1,4 +1,5 @@
 //MAIN COMPONENT JS STARTS
+var zxc = "hellooloo";
 var arr = [
   "https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZnVybml0dXJlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80",
   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPjV0BrUaZjhdAuOOe10j37VufyErnW46dXw&usqp=CAU",
@@ -39,9 +40,9 @@ for (var i = 0; i < arr.length; i++) {
     "<i class='material-icons-outlined'>star_rate</i>" +
     "</a>" +
     "</div>" +
-    "<a href='/product' data-link class='card-icon card-shop-icon'>" +
-    "<i class='material-icons-outlined'>add_shopping_cart</i>" +
-    "</a>" +
+    "<i class='material-icons-outlined'><a href='/product' class='card-icon card-shop-icon' data-link onClick='setImg(event," +
+    i +
+    ")'>add_shopping_cart</a></i>" +
     "</div>" +
     "</div>" +
     "</div>";
@@ -49,7 +50,9 @@ for (var i = 0; i < arr.length; i++) {
 var product = document.querySelector(".product-container");
 var productImg = document.querySelector(".product-img-div");
 var bottomImg = document.querySelector(".product-img-container-bottom");
-
+function setImg(e, index) {
+  localStorage.setItem("imageurl", arr[index]);
+}
 function openCard(e, index) {
   console.log("CRAD OPENEr");
   mainSection.style.display = "none";
