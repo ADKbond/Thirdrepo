@@ -1,0 +1,47 @@
+<p>newcomp works!</p>
+<ul class="fruits">
+  <div *ngFor="let f of fruit; index as i">
+    <button (click)="selectedFruit(f)">
+      {{ f.fname }}
+    </button>
+  </div>
+  <button (click)="clearSelect()" class="clear-btn">CLear</button>
+  <div *ngIf="selected.fname != ''">
+    <input type="text" [(ngModel)]="selected.fname" />
+  </div>
+  <div [ngClass]="{ right: isSelected == true, wrong: isSelected == false }">
+    HELLOO
+  </div>
+  <button (click)="toggleSel()">Toggle</button>
+  <div class="form-container">
+    <form name="contactform" novalidate>
+      Name
+      <input
+        type="text"
+        name="name"
+        [formControl]="formName"
+        [ngClass]="
+          formName.touched
+            ? formName.errors
+              ? 'falseInput'
+              : 'trueInput'
+            : formName.errors?.pattern
+            ? 'falseInput'
+            : 'defaultInput'
+        "
+      />
+      <!-- {{ formName.touched }}
+      {{ formName.errors?.minlength }} -->
+      <div *ngIf="formName.touched">
+        <div *ngIf="formName.errors?.required">Name Cannot be empty</div>
+      </div>
+      <div *ngIf="formName.errors?.pattern">You can only enter alphabets</div>
+
+      Email
+      <input type="email" name="email" />
+      Message
+      <textarea name="message"></textarea>
+      <input type="submit" value="send" />
+    </form>
+  </div>
+</ul>

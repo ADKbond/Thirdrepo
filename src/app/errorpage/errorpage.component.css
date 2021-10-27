@@ -1,0 +1,78 @@
+.error-container {
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+.error-header {
+  height: 5rem;
+  border: 2px solid #7bb4e1;
+  background-color: #cce2f3;
+  padding: 1rem;
+}
+.error-head-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #486485;
+}
+.error-main {
+  display: flex;
+  height: calc(100vh - 10rem);
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.error-main-warning {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 30%;
+}
+.error-min-body {
+  flex-basis: 40%;
+}
+.reason-container,
+.enroll-container {
+  padding: 1rem;
+}
+.warn-icon {
+  color: orange;
+  font-size: 2rem;
+}
+.warn-text {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.ques {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.ans {
+}
+.return-btn-container {
+  flex-basis: 30%;
+  display: flex;
+  align-items: center;
+}
+.return-btn {
+  padding: 2rem 1.5rem;
+  border: 1px solid #7bb4e1;
+  background-color: #cce2f3;
+}
+.return-btn:focus {
+  outline: none;
+}
+.enroll-link {
+  color: darkviolet;
+}
+.error-footer {
+  position: absolute;
+  bottom: 0;
+  height: 5rem;
+  width: 100vw;
+  border: 2px solid #7bb4e1;
+  background-color: #cce2f3;
+  padding: 1rem;
+}

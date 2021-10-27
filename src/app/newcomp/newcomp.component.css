@@ -1,0 +1,26 @@
+.clear-btn {
+  background-color: red;
+  color: white;
+}
+.right {
+  background-color: green;
+}
+.wrong {
+  background-color: red;
+}
+
+.trueInput,
+.trueInput:focus {
+  border: 5px solid green;
+  outline: none;
+}
+.falseInput,
+.falseInput:focus {
+  border: 5px solid red;
+  outline: none;
+}
+.defaultInput,
+.defaultInput:focus {
+  border: 5px solid blue;
+  outline: none;
+}

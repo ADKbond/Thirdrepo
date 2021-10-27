@@ -1,0 +1,13 @@
+<ul class="courses">
+  <li *ngFor="let c of course; index as i; first as isFirst">
+    <span *ngIf="isFirst" class="badge">ID: {{ c.id }}</span>
+    <span class="badge">NAME: {{ course[i].name }}</span>
+  </li>
+</ul>
+<div>
+  <label>
+    <!-- 2 way data binding using ngModel -->
+    <input [(ngModel)]="course[0].name" placeholder="name" />
+  </label>
+  <button (click)="setValue()">Click</button>
+</div>
